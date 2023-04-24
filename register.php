@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'includes/navbar.php';
 include 'includes/header.php';
 ?>
@@ -6,6 +7,9 @@ include 'includes/header.php';
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
+
+                <?php include 'messages.php' ?>
+
                 <div class="card">
                     <div class="card-header">
                         <h4>Register</h4>
@@ -13,11 +17,11 @@ include 'includes/header.php';
                     <div class="card-body ">
                         <form action="registercode.php" method="POST">
                             <div class="form-group mb-3">
-                                <label for="username">First Name</label>
+                                <label for="firstname">First Name</label>
                                 <input type="text" class="form-control" name="firstname" placeholder="Enter Firstname">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="username">Last Name</label>
+                                <label for="lastname">Last Name</label>
                                 <input type="text" class="form-control" name="lastname" placeholder="Enter Lastname">
                             </div>
                             <div class="form-group mb-3">
@@ -25,15 +29,15 @@ include 'includes/header.php';
                                 <input type="text" class="form-control" name="username" placeholder="Enter Username">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="username">Email</label>
+                                <label for="email">Email</label>
                                 <input type="email" class="form-control" name="email" placeholder="Enter Email">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="username">Password</label>
+                                <label for="password">Password</label>
                                 <input type="password" class="form-control" name="password" placeholder="Enter Password">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="username">Confirm Password</label>
+                                <label for="confirm_password">Confirm Password</label>
                                 <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
                             </div>
                             <div class="form-group mb-3">
